@@ -17,7 +17,7 @@ This repository shares a checklist that I use for building web applications in J
 
 ## :computer: During development
 
-### Git
+### [Git](https://www.atlassian.com/git)
 
 - [ ] Work on feature branches.
 - [ ] Branch out from `develop` branch
