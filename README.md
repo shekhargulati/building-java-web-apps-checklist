@@ -3,8 +3,7 @@ This repository shares a checklist that I use for building web applications in J
 
 ## :beginner: Before you start development
 
-- [ ] Take architectural decisions.
-      - [ ] Finalize tech stack
+- [ ] Take architectural decisions. Finalize tech stack
 - [ ] Create a multi-module Maven or Gradle project for your development. Start with two modules — `backend` and `frontend`.  You can refer to [spring-boot-react-maven-starter](https://github.com/shekhargulati/spring-boot-react-maven-starter) for inspiration.
       1. `backend`: This contains Java code of the application.
       2. `frontend`: This contains all react JavaScript code of the application.
