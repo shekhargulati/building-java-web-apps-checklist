@@ -52,13 +52,13 @@ This repository shares a checklist that I use for building web applications in J
 ### Documentation
 
 - [ ] Create `README.md` file in root of your project and keep it updated. The README file should have following:
-      - [ ] Couple of lines describing purpose of the project
-      - [ ] instruction to grab the latest code and detailed instructions to build it
-      - [ ] Instructions to run the project on local machine
-      - [ ] Link to Continuous integration server
-      - [ ] Instruction to do any setup required for the project
-      - [ ] Instruction to grab project documentation
-      - [ ] Any other relevant information that can help a new developer get started with the project
+- [ ] Couple of lines describing purpose of the project
+- [ ] Instruction to grab the latest code and detailed instructions to build it
+- [ ] Instructions to run the project on local machine
+- [ ] Link to Continuous integration server
+- [ ] Instruction to do any setup required for the project
+- [ ] Instruction to grab project documentation
+- [ ] Any other relevant information that can help a new developer get started with the project
 
 ### Code style
 
