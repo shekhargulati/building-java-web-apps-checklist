@@ -18,84 +18,96 @@ This repository shares a checklist that I use for building web applications in J
 
 ## :computer: During development
 
-- [ ] Git
+### Git
 
-      - [ ] Work on feature branches.
-      - [ ] Branch out from `develop` branch
-      - [ ] Never push to `master` or `develop`. Make a pull request.
-      - [ ] Create PR on the `develop` branch and once it is tested then only merge to master. You can use different strategy like merge to `master` once sprint finishes.
-      - [ ] Delete local and remote branches after merging. You can automate this process as well.
-      - [ ] Before raising PR, run the build locally and make sure all tests pass.
-      - [ ] Use `.gitignore` file.
-      - [ ] Protect your `master` branch.
-      - [ ] Never commit binary files to Git.
-      - [ ] Write meaningful Git commit messages. [Read Chris Beam post on it](https://chris.beams.io/posts/git-commit/).
-      - [ ] Feature branches should be short lived.
-- [ ] CI
+- [ ] Work on feature branches.
+- [ ] Branch out from `develop` branch
+- [ ] Never push to `master` or `develop`. Make a pull request.
+- [ ] Create PR on the `develop` branch and once it is tested then only merge to master. You can use different strategy like merge to `master` once sprint finishes.
+- [ ] Delete local and remote branches after merging. You can automate this process as well.
+- [ ] Before raising PR, run the build locally and make sure all tests pass.
+- [ ] Use `.gitignore` file.
+- [ ] Protect your `master` branch.
+- [ ] Never commit binary files to Git.
+- [ ] Write meaningful Git commit messages. [Read Chris Beam post on it](https://chris.beams.io/posts/git-commit/).
+- [ ] Feature branches should be short lived.
 
-      - [ ] Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server.
+### CI
 
-      - [ ] Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline.
+- [ ] Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server.
 
-      - [ ] Fix broken builds immediately. CI server should always be in healthy green state.
+- [ ] Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline.
 
-      - [ ] Make CI server visible and transparent to whole team.
+- [ ] Fix broken builds immediately. CI server should always be in healthy green state.
 
-      - [ ] Maintain build jobs as code use `Jenkinsfile` if you are using Jenkins
+- [ ] Make CI server visible and transparent to whole team.
 
-      - [ ] You should be able to create build jobs on a new CI server using code.
+- [ ] Maintain build jobs as code use `Jenkinsfile` if you are using Jenkins
 
-      - [ ] Use pull request builder to build the project when pull request is raised.
+- [ ] You should be able to create build jobs on a new CI server using code.
 
-      - [ ] ​
-- [ ] Documentation
-      - [ ] Create `README.md` file in root of your project and keep it updated. The README file should have following:
-            - [ ] Couple of lines describing purpose of the project
-            - [ ] instruction to grab the latest code and detailed instructions to build it
-            - [ ] Instructions to run the project on local machine
-            - [ ] Link to Continuous integration server
-            - [ ] Instruction to do any setup required for the project
-            - [ ] Instruction to grab project documentation
-            - [ ] Any other relevant information that can help a new developer get started with the project
-- [ ] Code style
-      - [ ] Use check style in your project. Make sure you it is integrated with the build
-- [ ] Testing
+- [ ] Use pull request builder to build the project when pull request is raised.
 
-      - [ ] Write one automated functional test per user story.
-      - [ ] Cover business logic with unit/Integration tests.
-      - [ ] Understand different between unit testing and integration testing.
-      - [ ] Use consistent names for tests. I prefer to use `*Tests` as suffix for my tests.
-      - [ ] Use consistent naming strategy for tests like `shouldRegisterNewUser` or `registerNewUser` or `should_register_new_user`
-- [ ] Dependencies
+- [ ] ​
 
-      - [ ] Add a new dependency to the project after discussing with the team.
-      - [ ] Use [Snyk](https://snyk.io/) to check security vulnerabilities.
-      - [ ] Don't add dependency for each problem you face. First check if you already have some dependency that solves the problem.
-- [ ] Learning
+### Documentation
 
-      - [ ] Spend one hour on learning every day.
-      - [ ] Give XKE.
-      - [ ] Write blog.
-- [ ] Naming
+- [ ] Create `README.md` file in root of your project and keep it updated. The README file should have following:
+      - [ ] Couple of lines describing purpose of the project
+      - [ ] instruction to grab the latest code and detailed instructions to build it
+      - [ ] Instructions to run the project on local machine
+      - [ ] Link to Continuous integration server
+      - [ ] Instruction to do any setup required for the project
+      - [ ] Instruction to grab project documentation
+      - [ ] Any other relevant information that can help a new developer get started with the project
 
-      - [ ] Think and discuss with team before choosing a name for public member.
-      - [ ] Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.
-      - [ ] Java and JavaScript use camelCase for methods and variables.
-- [ ] Exception handling
+### Code style
 
-      - [ ] Catch any checked exception thrown by the code.
+- [ ] Use check style in your project. Make sure you it is integrated with the build
 
-      - [ ] Convert checked exception to unchecked exception.
+### Testing
 
-      - [ ] Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException
+- [ ] Write one automated functional test per user story.
+- [ ] Cover business logic with unit/Integration tests.
+- [ ] Understand different between unit testing and integration testing.
+- [ ] Use consistent names for tests. I prefer to use `*Tests` as suffix for my tests.
+- [ ] Use consistent naming strategy for tests like `shouldRegisterNewUser` or `registerNewUser` or `should_register_new_user`
 
-      - [ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception
+### Dependencies
 
-      - [ ] Catch all exceptions thrown by code in your Controller or Resource classes
+- [ ] Add a new dependency to the project after discussing with the team.
+- [ ] Use [Snyk](https://snyk.io/) to check security vulnerabilities.
+- [ ] Don't add dependency for each problem you face. First check if you already have some dependency that solves the problem.
 
-      - [ ] Log exceptions only in the Controller or Resource classes
+### Learning
 
-      - [ ] Log both the message and exception. If using slf4j, use log.error(“message”,e)
-- [ ] Logging
-      - [ ] Use slf4j with logback for logging.
-- [ ] REST API design
+- [ ] Spend one hour on learning every day.
+- [ ] Give XKE.
+- [ ] Write blog.
+
+### Naming
+
+- [ ] Think and discuss with team before choosing a name for public member.
+- [ ] Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.
+- [ ] Java and JavaScript use camelCase for methods and variables.
+
+### Exception handling
+
+- [ ] Catch any checked exception thrown by the code.
+
+- [ ] Convert checked exception to unchecked exception.
+
+- [ ] Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException
+
+- [ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception
+
+- [ ] Catch all exceptions thrown by code in your Controller or Resource classes
+
+- [ ] Log exceptions only in the Controller or Resource classes
+
+- [ ] Log both the message and exception. If using slf4j, use log.error(“message”,e)
+
+### Logging
+- [ ] Use slf4j with logback for logging.
+
+### REST API design
