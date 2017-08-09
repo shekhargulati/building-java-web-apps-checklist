@@ -1,9 +1,10 @@
-# :ballot_box_with_check: building-java-web-apps-checklist
+# ✅  building-java-web-apps-checklist
+
 This repository shares a checklist that I use for building web applications in Java+ Angular/React.
 
 ## :beginner: Before you start development
 
-- [ ] Take architectural decisions. Finalize tech stack
+- [ ] Take architectural decisions. Finalize tech stack.
 - [ ] Create a multi-module Maven or Gradle project for your development. Start with two modules — `backend` and `frontend`.  You can refer to [spring-boot-react-maven-starter](https://github.com/shekhargulati/spring-boot-react-maven-starter) for inspiration. `backend` contains Java code of the application. `frontend` contains all React/Angular JavaScript/TypeScript code of the application.
 - [ ] You should use [Maven](https://github.com/takari/maven-wrapper) or [Gradle](https://docs.gradle.org/current/userguide/gradle_wrapper.html) wrapper scripts so that a new developer do not need to install Maven or Gradle on their machine before executing the build.
 - [ ] Build project as a single jar/war using a single command i.e. if I am using Maven as my build tool then I should be able to run `./mvnw clean install` in the project root to build the executable.
@@ -18,7 +19,7 @@ This repository shares a checklist that I use for building web applications in J
 ### [Git](https://www.atlassian.com/git)
 
 - [ ] Work on feature branches.
-- [ ] Branch out from `develop` branch
+- [ ] Branch out from `develop` branch.
 - [ ] Never push to `master` or `develop`. Make a pull request.
 - [ ] Create PR on the `develop` branch and once it is tested then only merge to master. You can use different strategy like merge to `master` once sprint finishes.
 - [ ] Delete local and remote branches after merging. You can automate this process as well.
@@ -32,30 +33,24 @@ This repository shares a checklist that I use for building web applications in J
 ### [CI](https://martinfowler.com/articles/continuousIntegration.html)
 
 - [ ] Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server.
-
 - [ ] Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline.
-
 - [ ] Fix broken builds immediately. CI server should always be in healthy green state.
-
 - [ ] Make CI server visible and transparent to whole team.
-
 - [ ] Maintain build jobs as code use `Jenkinsfile` if you are using Jenkins
-
 - [ ] You should be able to create build jobs on a new CI server using code.
-
 - [ ] Use pull request builder to build the project when pull request is raised.
 
 
 ### [Documentation](https://robots.thoughtbot.com/how-to-write-a-great-readme)
 
 - [ ] Create `README.md` file in root of your project and keep it updated. The README file should have following:
-- [ ] Couple of lines describing purpose of the project
-- [ ] Instruction to grab the latest code and detailed instructions to build it
-- [ ] Instructions to run the project on local machine
-- [ ] Link to Continuous integration server
-- [ ] Instruction to do any setup required for the project
-- [ ] Instruction to grab project documentation
-- [ ] Any other relevant information that can help a new developer get started with the project
+- [ ] Couple of lines describing purpose of the project.
+- [ ] Instruction to grab the latest code and detailed instructions to build it.
+- [ ] Instructions to run the project on local machine.
+- [ ] Link to Continuous integration server.
+- [ ] Instruction to do any setup required for the project.
+- [ ] Instruction to grab project documentation.
+- [ ] Any other relevant information that can help a new developer get started with the project.
 
 ### Code style
 
@@ -79,7 +74,7 @@ This repository shares a checklist that I use for building web applications in J
 ### Learning
 
 - [ ] Spend one hour on learning every day.
-- [ ] Give XKE.
+- [ ] Give session at your office or local meetup.
 - [ ] Write blog.
 
 ### Naming
@@ -93,17 +88,11 @@ This repository shares a checklist that I use for building web applications in J
 ### Exception handling
 
 - [ ] Catch any checked exception thrown by the code.
-
 - [ ] Convert checked exception to unchecked exception.
-
-- [ ] Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException
-
-- [ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception
-
-- [ ] Catch all exceptions thrown by code in your Controller or Resource classes
-
-- [ ] Log exceptions only in the Controller or Resource classes
-
+- [ ] Throw the unchecked exception. Unchecked exception could be custom or plain RuntimeException.
+- [ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception.
+- [ ] Catch all exceptions thrown by code in your Controller or Resource classes.
+- [ ] Log exceptions only in the Controller or Resource classes.
 - [ ] Log both the message and exception. If using slf4j, use log.error(“message”,e)
 
 ### Logging
