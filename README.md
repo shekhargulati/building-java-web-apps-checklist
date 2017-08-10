@@ -2,8 +2,9 @@
 
 This repository shares a checklist that I use for building web applications in Java+ Angular/React.
 
-
 ## :beginner: Before you start development
+
+> ***Software architecture is the set of design decisions which, if made incorrectly, may cause your project to be cancelled. — Eoin Woods***
 
 - [ ] Take architectural decisions. Finalize tech stack.
 - [ ] Create a multi-module Maven or Gradle project for your development. Start with two modules — `backend` and `frontend`.  You can refer to [spring-boot-react-maven-starter](https://github.com/shekhargulati/spring-boot-react-maven-starter) for inspiration. `backend` contains Java code of the application. `frontend` contains all React/Angular JavaScript/TypeScript code of the application.
@@ -15,7 +16,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Finalise your testing strategy both manual and automated.
 - [ ] Each team member should come up with their learning goal.
 
-## :computer: During development
+## :computer: During Development
 
 ### [Git](https://www.atlassian.com/git)
 
@@ -31,7 +32,9 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Write meaningful Git commit messages. [Read Chris Beam post on it](https://chris.beams.io/posts/git-commit/).
 - [ ] Feature branches should be short lived.
 
-### [CI](https://martinfowler.com/articles/continuousIntegration.html)
+### [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
+
+> ***The most important practice for continuous integration to work properly is frequent check-ins to trunk or mainline. You should be checking in your code at least a couple of times a day. — David Farley***
 
 - [ ] Every code committed to version control system mainline should trigger a continuous integration job that runs on the integration server.
 - [ ] Continuous integration job should build the project and run all unit test cases. It should happen on each code commit to mainline.
@@ -44,6 +47,8 @@ This repository shares a checklist that I use for building web applications in J
 
 ### [Documentation](https://robots.thoughtbot.com/how-to-write-a-great-readme)
 
+> ***Documentation is the castor oil of programming. Managers think it is good for programmers and programmers hate it!. — Gerald Weinberg***
+
 - [ ] Create `README.md` file in root of your project and keep it updated. The README file should have following:
 - [ ] Couple of lines describing purpose of the project.
 - [ ] Instruction to grab the latest code and detailed instructions to build it.
@@ -53,12 +58,16 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Instruction to grab project documentation.
 - [ ] Any other relevant information that can help a new developer get started with the project.
 
-### Code style
+### Code Style
+
+> ***Style distinguishes excellence from accomplishment. — James Coplien***
 
 - [ ] For backend, use [Checkstyle](http://checkstyle.sourceforge.net/) in your project. Make sure you it is integrated with the build.
 - [ ] For frontend, use ESLint or [TSLint](https://palantir.github.io/tslint/).
 
 ### Testing
+
+> ***Program testing can be used to show the presence of bugs, but never to show their absence! — Edsger Dijkstra***
 
 - [ ] Write one automated functional test per user story.
 - [ ] Cover business logic with unit/Integration tests.
@@ -74,19 +83,21 @@ This repository shares a checklist that I use for building web applications in J
 
 ### Learning
 
+> ***You have to learn the rules of the game. And then you have to play better than anyone else. — Albert Einstein***
+
 - [ ] Spend one hour on learning every day.
 - [ ] Give session at your office or local meetup.
 - [ ] Write blogs.
 
 ### Naming
 
-> ***There are only two hard things in computer science: Cache Invalidation and Naming Things*** — Phil Karlton
+> ***There are only two hard things in computer science: Cache Invalidation and Naming Things — Phil Karlton***
 
 - [ ] Think and discuss with team before choosing a name for public member.
 - [ ] Java and JavaScript use PascalCase for classes, interfaces, enums, annotations.
 - [ ] Java and JavaScript use camelCase for methods and variables.
 
-### Exception handling
+### Exception Handling
 
 - [ ] Catch any checked exception thrown by the code.
 - [ ] Convert checked exception to unchecked exception.
@@ -99,7 +110,7 @@ This repository shares a checklist that I use for building web applications in J
 ### Logging
 - [ ] Use slf4j with logback for logging.
 
-### REST API design
+### REST API Design
 
 - [ ] Pick a versioning strategy. If you don't understand pros and cons of different strategies then pick URL versioning scheme `/api/v1`. Twitter uses this versioning scheme.
 - [ ] Resources are nouns.
@@ -111,7 +122,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] For testing RESTful clients, use mock server. Use [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) JUnit rule for testing HTTP interactions.
 - [ ] Learn how great REST APIs are designed. I refer to [Github REST API](https://developer.github.com/v3/) when in doubt. I find it the best designed REST API.
 
-### [Code review](https://www.atlassian.com/agile/code-reviews)
+### [Code Review](https://www.atlassian.com/agile/code-reviews)
 
 > ***Code reviews are about code not people. Don't take code criticism personally.***
 
