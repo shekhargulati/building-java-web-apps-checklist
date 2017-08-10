@@ -1,6 +1,7 @@
 # ✅  building-java-web-apps-checklist
 
-This repository shares a checklist that I use for building web applications in Java+ Angular/React.
+This repository shares a checklist that I use for building web applications in Java+ Angular/React.![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+
 
 ## :beginner: Before you start development
 
@@ -128,7 +129,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Make sure there are no warnings and errors in the console.
 - [ ] Test on all the four major browsers — Chrome, Firefox, IE, and Safari.
 - [ ] Check spellings.
-- [ ]  Make sure grammar is correct in the messages.
+- [ ] Make sure grammar is correct in the messages.
 - [ ] Add Google Analytics into your project.
 - [ ] Use jQuery 3 instead of earlier versions of jQuery.
 - [ ] Prefer Angular 4+ over Angular 1.x. 
