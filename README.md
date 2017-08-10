@@ -110,7 +110,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] For testing RESTful clients, use mock server. Use [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) JUnit rule for testing HTTP interactions.
 - [ ] Learn how great REST APIs are designed. I refer to [Github REST API](https://developer.github.com/v3/) when in doubt. I find it the best designed REST API.
 
-### [Code Review](https://www.atlassian.com/agile/code-reviews)
+### [Code review](https://www.atlassian.com/agile/code-reviews)
 
 > ***Code reviews are about code not people. Don't take code criticism personally.***
 
