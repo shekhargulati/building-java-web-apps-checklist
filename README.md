@@ -1,6 +1,6 @@
-# ✅  building-java-web-apps-checklist
+# ✅  building-java-web-apps-checklist ![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 
-This repository shares a checklist that I use for building web applications in Java+ Angular/React.![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+This repository shares a checklist that I use for building web applications in Java+ Angular/React.
 
 
 ## :beginner: Before you start development
