@@ -93,7 +93,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Always use two arguments constructor of RuntimeException. The first take a message, second is the actual exception.
 - [ ] Catch all exceptions thrown by code in your Controller or Resource classes.
 - [ ] Log exceptions only in the Controller or Resource classes.
-- [ ] Log both the message and exception. If using slf4j, use log.error(“message”,e)
+- [ ] Log both the message and exception. If using slf4j, then use `log.error(“message”,e)`.
 
 ### Logging
 - [ ] Use slf4j with logback for logging.
@@ -111,3 +111,15 @@ Todo
 - [ ] Does all the functional requirements met?
 - [ ] Does the code conform to existing style guidelines?
 - [ ] Propose better way to do certain tasks. It could be a library function that developer can use.
+
+## Front-end
+
+- [ ] Commit `yarn.lock` file
+- [ ] Remove all `console.log` statements in the code.
+- [ ] Use linter and integrate it with the build tool.
+- [ ] Make sure there are no warnings and errors in the console.
+- [ ] Test on all the four major browsers — Chrome, Firefox, IE, and Safari.
+- [ ] Check spellings.
+- [ ]  Make sure grammar is correct in the messages.
+- [ ] Add Google Analytics into your project.
+- [ ] Use jQuery 3 instead of earlier versions of jQuery.
