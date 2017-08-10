@@ -133,3 +133,6 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Add Google Analytics into your project.
 - [ ] Use jQuery 3 instead of earlier versions of jQuery.
 - [ ] Prefer Angular 4+ over Angular 1.x. 
+
+-----------
+You can follow me on twitter at [https://twitter.com/shekhargulati](https://twitter.com/shekhargulati) or email me at <shekhargulati84@gmail.com>. Also, you can read my blogs at [http://shekhargulati.com/](http://shekhargulati.com/)
