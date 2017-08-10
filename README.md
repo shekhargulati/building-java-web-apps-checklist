@@ -75,7 +75,7 @@ This repository shares a checklist that I use for building web applications in J
 
 - [ ] Spend one hour on learning every day.
 - [ ] Give session at your office or local meetup.
-- [ ] Write blog.
+- [ ] Write blogs.
 
 ### Naming
 
@@ -100,7 +100,15 @@ This repository shares a checklist that I use for building web applications in J
 
 ### REST API design
 
-Todo
+- [ ] Pick a versioning strategy. If you don't understand pros and cons of different strategies then pick URL versioning scheme `/api/v1`. Twitter uses this versioning scheme.
+- [ ] Resources are nouns.
+- [ ] Use HTTP `POST` for creating a resource on the server or for taking action. Always return location of created entity in the `Location` header.
+- [ ] Use `PATCH` HTTP method for update for partial update.
+- [ ] Use `PUT` HTTP method when you do full update i.e. when client sends all the information in the request. 
+- [ ] For mapping actions use a consistent strategy. I recommend using `resource_name/actions/:action` strategy. For example, REST API for implementing `like` functionality you will make HTTP POST request to  `/api/v1/posts/123/actions/like` URL.
+- [ ] In the above example if you have to implement undo action then you can make HTTP DELETE operation to `/api/v1/posts/actions/unlike`.
+- [ ] For testing RESTful clients, use mock server. Use [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) JUnit rule for testing HTTP interactions.
+- [ ] Learn how great REST APIs are designed. I refer to [Github REST API](https://developer.github.com/v3/) when in doubt. I find it the best designed REST API.
 
 ### [Code Review](https://www.atlassian.com/agile/code-reviews)
 
@@ -123,3 +131,4 @@ Todo
 - [ ]  Make sure grammar is correct in the messages.
 - [ ] Add Google Analytics into your project.
 - [ ] Use jQuery 3 instead of earlier versions of jQuery.
+- [ ] Prefer Angular 4+ over Angular 1.x. 
