@@ -64,6 +64,7 @@ This repository shares a checklist that I use for building web applications in J
 
 - [ ] For backend, use [Checkstyle](http://checkstyle.sourceforge.net/) in your project. Make sure you it is integrated with the build.
 - [ ] For frontend, use ESLint or [TSLint](https://palantir.github.io/tslint/).
+- [ ] Format your code before committing.
 
 ### Testing
 
@@ -144,6 +145,7 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Add Google Analytics into your project.
 - [ ] Use jQuery 3 instead of earlier versions of jQuery.
 - [ ] Prefer Angular 4+ over Angular 1.x. 
+- [ ] Don't use Bower. Use npm to manage client side dependencies.
 
 ## Website performance optimization
 
