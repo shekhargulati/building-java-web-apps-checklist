@@ -110,6 +110,8 @@ This repository shares a checklist that I use for building web applications in J
 
 ### Logging
 - [ ] Use slf4j with logback for logging.
+- [ ] My applications logs all errors
+- [ ] The log files are rotated
 
 ### REST API Design
 
@@ -149,8 +151,13 @@ This repository shares a checklist that I use for building web applications in J
 
 ## Website performance optimization
 
-- [ ] Run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool on your website
-- [ ] Go through [BrowserDiet](https://browserdiet.com/en/) guide
+- [ ] Run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool on your website.
+- [ ] Go through [BrowserDiet](https://browserdiet.com/en/) guide.
+- [ ] All my application web pages load under 3 seconds.
+
+## License
+
+- [ ] Make sure you do not violate 3rd-party dependencies licenses. Your can use [LicenseFinder](https://github.com/pivotal/LicenseFinder) to compare licenses against a user-defined whitelist.
 
 -----------
 You can follow me on twitter at [https://twitter.com/shekhargulati](https://twitter.com/shekhargulati) or email me at <shekhargulati84@gmail.com>. Also, you can read my blogs at [http://shekhargulati.com/](http://shekhargulati.com/)
