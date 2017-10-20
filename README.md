@@ -119,7 +119,8 @@ This repository shares a checklist that I use for building web applications in J
 - [ ] Resources are nouns.
 - [ ] Use HTTP `POST` for creating a resource on the server or for taking action. Always return location of created entity in the `Location` header.
 - [ ] Use `PATCH` HTTP method for update for partial update.
-- [ ] Use `PUT` HTTP method when you do full update i.e. when client sends all the information in the request. 
+- [ ] Use `PUT` HTTP method when you do full update i.e. when client sends all the information in the request.
+- [ ] Use `DELETE` HTTP method to delete a resource on the server
 - [ ] For mapping actions use a consistent strategy. I recommend using `resource_name/actions/:action` strategy. For example, REST API for implementing `like` functionality you will make HTTP POST request to  `/api/v1/posts/123/actions/like` URL.
 - [ ] In the above example if you have to implement undo action then you can make HTTP DELETE operation to `/api/v1/posts/actions/unlike`.
 - [ ] For testing RESTful clients, use mock server. Use [MockWebServer](https://github.com/square/okhttp/tree/master/mockwebserver) JUnit rule for testing HTTP interactions.
